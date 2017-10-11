@@ -1,5 +1,9 @@
 open Printf
 
+(*
+    return multiple values through tuple
+*)
+
 let stats l = 
     let rec helper rest n sum sum_squares = 
         match rest with
