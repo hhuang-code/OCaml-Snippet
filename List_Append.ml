@@ -5,7 +5,7 @@ let rec append l1 l2 =
     if l1 = [] then l2
     else hd l1 :: append (tl l1) l2;;
     
-(* A better version: *)
+(* A better version: it allows the compiler to verify that the matching is exhaustive *)
 let rec append l1 l2 =
     match l1 with
     |[] -> l2
